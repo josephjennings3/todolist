@@ -15,17 +15,17 @@ class App extends Component {
     return (
       <Router>
         <div className="container">
-          <nav className="navbar navbar-expand-ls navbar-light bg-light">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="https://josephjennings3.com" target="_blank">
               <img src={logo} width="30" height="30" alt="josephjennings3.com" />
             </a>
-            <Link to="/" className="navbar-brand">MERN-Stack Todo App</Link>
+            <Link to="/" className="navbar-brand mr-auto">MERN-Stack Todo App</Link>
             <div className="collpase navbar-collapse">
-              <ul className="navbar-nav mr-auto">
-                <li className="navbar-item">
+              <ul className="navbar-nav mr-auto list-inline">
+                <li className="navbar-item list-inline-item">
                   <Link to="/" className="nav-link">Todos</Link>
                 </li>
-                <li className="navbar-item">
+                <li className="navbar-item list-inline-item">
                   <Link to="/create" className="nav-link">Create Todo</Link>  
                 </li>
               </ul>
